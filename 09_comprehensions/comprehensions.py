@@ -16,6 +16,9 @@ print(long_upper_words(words))
 
 #Create a function that returns a dictionary mapping each word to its length from a list of words
 def word_lengths(words):
-    return{length:len(word) for word in words}
+    return{word:len(word) for word in words}
 
+words = ['apple', 'banana', 'kiwi']
+n = word_lengths(words)
+print(n)
 print(word_lengths(words))
